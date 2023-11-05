@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web dev</title>
+</head>
+<body>
+    <h1>hey h1</h1>
+    <h2>hey h2</h2>
+    <h3>hey h3</h3>
+    <h4>hey h4</h4>
+    <h5>hey h5</h5>
+    <h6>hey h6</h6>
+    <!--  anchor tag : link 
+    href : hyper reference  target :_self : on same tab, _blank:new tab -->
+    <a href="https://www.instagram.com/" target="_self">Here's my Insta Account</a><br>
+    <a href="http://www.facebook.com/" target="_blank" rel="noopener noreferrer">Here's is my Facebook Account</a>
+    <p>Lorem ipsum  <b>dolor</b> sit amet <strong>consectetur.</strong></p>
+    <p>Lorem ipsum <em>sit amet consectetur</em> adipisicing <i>Assumenda,</i> iusto totam? Omnis animi possimus vel.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur <mark>elit. Non consectetur</mark> molestiae deleniti!</p>
+    <p>Lorem ipsum dolor sit amet <u>consectetur</u> adipisicing elit. Unde, error.</p>
+    <small>hello this is manu</small><br><br>
+    <p>log<sub>n</sub>N <br></p>
+    log<sub>x</sub>[x] <br>
+    e<sup>x</sup> 
+    E<sup>X</sup> <br>
+    <p>log<sub>2</sub>2 = 1 </p>
+    <p>2<sup>2</sup> = 4</p>
+    <p>Code example:<code>var person;</code></p>
+    <h2>Code:</h2> 
+    <pre>
+    <code>var person = {
+      firstName:"John",
+      lastName:"Doe"
+    }</code>
+    </pre>
+    <p>A simple math equation: 
+    <var>x</var> = 3 + 2; </p>
+        
+    <h2>Lists:3 types of list</h2>
+    <!--to write text from left to right-->
+    <bdo dir="rtl">welcome to W3 schools</bdo>
+    <!-- HTML tags that will preserve all spaces and linebreaks when the element is displayed -->
+    <h2>Preserve tag</h2>
+    <pre>
+    My Bonnie lies over the ocean.
+        
+    My Bonnie lies over the sea.
+  
+    My Bonnie lies over the ocean.
+  
+    Oh, bring back my Bonnie to me.
+    </pre>
+    <!-- Add a line through (strikeout) the letters "blue" in the text below-->
+    <h2> To Strikeout the word</h2>
+    <p>
+        My favorite color is <del>blue</del> red.
+    </p>
+    <!-- to add quotation marks around the letters "cool".--> 
+    <h2>quotation marks</h2>
+    <p>I am so <q>cool</q> </p>
+    <h2>Abbrevation</h2>
+    <p>
+    The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.
+    </p>
+    <!---   specify that it is quoted from the following URL:
+        http://www.worldwildlife.org/who/index.html -->
+        
+    <blockquote cite="http://www.worldwildlife.org/who/index.html">
+    For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.
+    </blockquote>
+    <!-- to make the image become a link to "default.html".-->
+    <h2>To make the image become a link to "default.html".</h2>
+      <a href="default.html"><img src="smiley.gif">
+      </a>
+  
+
+    <h2>Lists</h2>
+    <p>unordered list</p>
+    <!-- ul= type:circle,bullets-disc,square,None-->
+    <!-- ol= type : I,i,A,a,1,none-->
+    <ul type="square">
+        <li>java</li>
+        <li>css</li>
+        <li>html</li>
+    </ul>
+    <p>ordered list:</p>
+    <ol type="i">
+        <li>biryani</li>
+        <li>chicken</li>
+        <li>egg</li>
+    </ol>
+    <p>Strating with particualr number :</p>
+    <ol type="1" start="9">
+        <li>biryani</li>
+        <li>chicken</li>
+        <li>egg</li>
+    </ol>
+    <ol type="reverse" start="9">
+        <li>biryani</li>
+        <li>chicken</li>
+        <li>egg</li>
+    </ol>
+    <!--nested list-->
+    <p>nested list:</p>
+    <ol>
+        <li>sap</li>
+        <li>azure</li>
+        <li>php</li>
+        <ul>
+            <li>aws</li>
+            <li>python</li>
+        </ul>
+        <li>Hadoop</li>
+        <li>Bigdata</li>
+    </ol>
+    <p><b>dl: it gives the description list dt: definition term dd:definition data</b></p>
+    <dl>
+        <dt><b>HTML:</b></dt>
+        <dd>It is technology related to web development gives structure of web page</dd>
+        <dt><b>Css:</b></dt>
+        <dd>It is technology related to web which gives styling </dd>
+    </dl>
+    <h2>Table</h2>
+    <table border="1" style="border: collapse;">
+        <caption>This is the Table</caption>
+        <tr>
+            <th>header1</th>
+            <th>header2</th>
+            <th>header3</th>
+            <th>header4</th>
+        </tr>
+
+        <tr>
+            <td colspan="3">R1</td>
+            <td>R2</td>
+           <!--- <td>R3</td> -->
+           <!---- <td>R4</td> -->
+        </tr>
+        <tr>
+            <td rowspan="2">Ra</td>
+            <td>Rb</td>
+            <td>Rc</td>
+            <td>Rd</td>
+        </tr>
+        <tr>
+            <td>Re</td>
+            <td>Rf</td>
+            <td>Rg</td>
+          <!--- <td>Rh</td> -->
+        </tr>
+        <tr>
+            <td>Ri</td>
+            <td>Rj</td>
+            <td colspan="2">Rk</td>
+           <!---- <td>Rl</td> -->
+        </tr>
+    </table>
+
+    <img src="./piggy-bank-1.png" alt="piggy img" height="200" width="200">
+    <audio controls autoplay loop muted src="./file_example_MP3_700KB.mp3" type="audiomp3"></audio>
+    <br>
+    <video controls type="video/mp4" src="https://youtube/KDjmKFjxXt0?si=HI3j_Zl6LXIzrCYP"></video>
+    <br><br>
+    <video height="150" width="400" controls autoplay loop muted>
+        <source src="https://www.youtube.com/embed/3kyrO5RVJEk?si=fQxKNVIV0VR_tuUJ" type="video/mp4">
+    </video>
+    <br>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/KDjmKFjxXt0?si=HI3j_Zl6LXIzrCYP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+</body>
+</html>

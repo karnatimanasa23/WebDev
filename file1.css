@@ -1,0 +1,127 @@
+/*
+Syntax for Selectors
+selector {
+property: value;
+} */
+
+.externalcss {
+    color: rgb(200, 196, 204);
+    background-color: chocolate;
+}
+hr{
+    border: 5px sloid black;
+}
+#id1{
+    color: #090805;
+    background-color: chartreuse;
+}
+/* 1.universal Selector
+    2.element selector
+    3.selector list
+    4.class selector
+    5.id selector 
+    6.Descendent selector
+    7.direct child-*/
+/* Universal Selector */
+* {
+    color:rgb(14, 5, 5);
+    background-color: rgb(199, 190, 190);
+}
+/* 2. Element Selector */
+/* h5 {
+color: white;
+background-color: black;
+} */
+/* ctrl + / */
+/* 3. Selector List */
+/* h4,p {
+color: white;
+background-color: #e2dbc5;
+} */
+/* 4. Class Selector */
+ /*.otherClass {
+color: aqua;
+background-color: yellow;
+}  */
+/* 5. ID Selector */
+ /*#id2 {
+color: white;
+background-color: black;
+} */
+/*Descendent selector (parent followed by child tag) */
+ol a {
+ color:red;
+}
+/* direct child selector > */
+div > h4 {
+    color:rgb(49, 238, 241);
+    background-color: black;
+}
+/* box model 
+border:can change solid,dotted,dashed
+padding:internal spaces
+padding:clockwise direction (top,right,bottom,left)
+padding: top&bottom right/left
+margin:external spaces 
+*/
+.boxmodel{
+    color:rgb(147, 13, 13);
+    border: 1px solid black;
+    padding: 10px 30px 30px 20px;
+    margin: 80px;
+}
+/* Psuedo classes:
+    Button States:
+    >> Hover State (Universal State)
+    >> Active State
+    >> Focus State
+    */
+/*  Hover State: Positioning your cursor pointer on the element */
+.hover:hover {
+    color:rgb(220, 230, 220);
+    border: 2px solid black;
+    background-color: green;
+    cursor: pointer;
+}
+/*
+Active State (Left Key): Holding left key/btn of the mouse */
+.active:active {
+    color:aliceblue;
+    background-color: #090805;
+    border: 2px solid black;
+}
+/*
+Focus State: When we click/visit that btn
+*/
+button:focus{
+    cursor: progress;
+    background-color: rgb(216, 31, 117);
+    border:2px solid black;
+}
+/*To select particular element */
+div:first-child{
+    color: chartreuse;
+}
+div:last-child {
+    color:blue;
+}
+div:nth-child(6){
+    color:chocolate;
+}
+div:nth-child(7){
+    color:crimson;
+}
+/* Pseudo element  :: */
+.pseudoelement::before {
+    color:rgb(250, 248, 252);
+    content: "hey ";
+}
+.pseudoelement::after {
+    color:aliceblue;
+    content:" Good evening" ;
+}
+
+
+
+
+

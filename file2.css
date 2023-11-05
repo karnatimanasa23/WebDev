@@ -1,0 +1,184 @@
+.box {
+    height: 150px;
+    width: 150px;
+    border:2px solid black; 
+    background-color: black;
+}
+.box1 {
+    height: 150px;
+    width: 200px;
+    border:2px solid black; 
+    background-color: rgb(210, 64, 64);
+}
+.box2 {
+    height:250px;
+    width:250px;
+    border:2px solid rgb(4, 3, 6);
+    background-color: yellow;
+    border-radius: 50%;
+    margin:100px;
+}
+/*Pseudo Elements 
+content must be there to display the element 
+position:absolute is child one
+-->without position and absolute it wont display image
+offset values :top , bottom , left , right ; */
+.box2::before{
+    height: 100px;
+    width:100px;
+    border: 2px solid black;
+    content:""; 
+    background-color: rgb(63, 192, 209);
+    position:absolute;
+    border-radius: 50%;
+  /*  top:100%;
+    left:50%; */
+}
+.box2::after{
+    height: 100px;
+    width:100px;
+    border: 2px solid black;
+    content:""; 
+    background-color: black;
+    position:absolute;
+    border-radius: 50%;
+  /* top:50%;  */
+    right:75%; 
+}
+/* Blockscope (default)  width will be same even if we change*/
+.displayInCss1 {
+    display: block;
+    background-color: brown;
+    height:40px;
+}
+.displayInCss2 {
+    display: block;
+    background-color: rgb(116, 16, 96);
+    height:40px;
+}
+/*Inline(no spaces)  here we can't chnage height of element it is fixed*/
+.displayInCss3 {
+    background-color: darkblue;
+    height:20px;
+    display: inline;
+   /* padding:20px; */
+}
+.displayInCss4 {
+    background-color: rgb(58, 195, 17);
+    height:60px;
+    display: inline;
+   /* padding:20px; */
+}
+/*inline-block we can change height and width */
+.displayInCss5 {
+    background-color: rgb(184, 38, 123);
+    height:20px;
+    display: inline-block;
+    height: 50px;
+}
+.displayInCss6 {
+    background-color: rgb(189, 25, 167);
+    height:20px;
+    display: inline;
+    height: 50px;
+    display: inline-block;
+}
+/*
+Position:
+>> Static Position (Default Position)
+>> Relative Position
+>> Absolute Position
+>> Fixed Position
+>> Sticky Position
+-->
+<!--
+Offset Values:
+>> top
+>> right
+>> bottom
+>> left
+-->
+*/
+/* static position*/
+.staticdefault{
+    position:static ;
+    background-color: yellow;
+    border:2px solid black;
+    top:50px;
+    bottom:50px;
+    left:10px;
+    right:5px;
+}
+/*relative position overlapp wiht other tags we can change */
+.relative {
+    background-color: black;
+    position: relative;
+    color:wheat;
+    height:25px;
+    top:25px;
+    right:60px;
+    left:20px;
+
+}
+/* position can 
+/*static position as shapes */
+.shape1{
+    height:100px;
+    width:100px;
+    border: 2px solid black;
+    background-color:brown;
+    position:static;
+    top: 100px;
+    left:100px;
+
+}
+/* relative position*/
+.shape2{
+    height:150px;
+    width:150px;
+    border: 2px solid black;
+    background-color: blueviolet;
+    position: relative;
+    top:20px;
+    left: 50px;
+    right:10px;
+    bottom:150px;
+}
+/*absolute postion (parent&child elements and adding child in parents class )*/
+.shape3{
+    height: 200px;
+    width: 200px;
+    background-color: blue;
+    border:2px solid black;
+    position: relative;
+    
+}
+.shape4{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(19, 182, 7);
+    border: 2px solid black;
+    position:absolute;
+    top: 25px;
+    bottom: 20px;
+    left: 20px;
+    right:10px;
+}
+/*fixed position */
+
+.fixed{
+    background-color: rgb(235, 228, 23);
+    border: 2px solid black;
+    position: fixed;
+    top: 80px;
+    left: 50px;
+} 
+/*sticky position */
+.sticky{
+    background-color: blue;
+    border: 1px solid black;
+    position: sticky;
+    top: 80px;
+    left: 50px;
+}
+

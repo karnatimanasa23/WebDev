@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Styling</title>
+    <link rel="stylesheet" href="file1.css">
+    <style>
+        h2{
+            color: aqua;
+            background-color: black;
+        }
+        h3{
+            color: white;
+            background-color: rgb(210, 52, 52);
+            font-size: 25px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+<body>
+    <!--inline css-->
+    <!--internal css-->
+    <!--external css-->
+
+    <!--1.inline css-->
+    <h1>Inline Css</h1>
+    <h2 style="color:white;background-color: black;">Hello Good Morning Everyone</h2>
+    <h4 style="color: bisque;background-color: brown;">Hello Dubai,Ellarukum Vanakkam</h4>
+    <hr>
+     <!--2.internal css-->
+    <h1>Internal Css</h1>
+    <h2>Hello Good Evening</h2>
+    <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+    <hr>
+    <!--3.external css-->
+    <h1>External css</h1>
+    <h3 class="externalcss">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, modi.</h3>
+    <p id="id1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus dolore, nihil aspernatur eligendi unde quae?</p>
+    <br>
+    <br>
+    <hr>
+ <!---  
+<h1>Precedence</h1>
+<h6>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit amet sed
+inventore dolore laudantium sequi voluptate libero. Alias, unde aliquam
+sed iusto nam est, ullam harum minima nulla laboriosam atque?
+</h6> 
+-->
+<!--
+h6{
+color: white;
+background-color: black;
+}
+</style>
+<link rel="stylesheet" href="./file1.css" />
+Precedence:
+>> Inline CSS >> External CSS >> Internal CSS
+>> Inline CSS >> Internal CSS >> External CSS
+<--Css Seletctors-->
+<!--1.universal Selector
+    2.element selector
+    3.selector list
+    4.class selector
+    5.id selector 
+    6.Descendent selector
+    7.direct child
+ ctrl+alt+arrowKey(top|down) multiple selection at same time-->
+ <br>
+ <br>
+    <h1>Selectors</h1>
+    <p class="otherclass">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quis commodi vitae nobis dignissimos dolore debitis, nulla saepe sed dolor placeat quae nam totam ducimus unde! Recusandae possimus eius eligendi?</p>
+    <h4 id="id2">Lorem ipsum dolor sit amet.</h4>
+    <h4>Helloooooooooooo</h4>
+   <!-- 6.Descendent selector -->
+   <h1>Descendent selector</h1>
+   <li><a href="#">this is external anchor tag1</a><br></li>
+   <li><a href="#">this is external anchor tag2</a><br></li>
+   <ol>
+    <li> <a  href="#">Hey this is internal selector 1</a></li>
+    <li> <a  href="#">Hey this is internal selector 2</a></li>
+    <li> <a  href="#">Hey this is internal selector 3</a></li>
+    <li> <a  href="#">Hey this is internal selector 4</a></li>
+    <li> <a  href="#">Hey this is internal selector 5</a></li>
+    </ol>
+    <!-- 7.Direct child selector-->
+    <h1>Direct child selector</h1>
+    <h4>this is external h4 selector1</h4>
+    <div>
+        <span><h4>this is internal h4 selector2</h4></span>
+        <h4 class="directchild">Hey this is h4 internal</h4>        
+        <h4 class="directchild">Hey this is h4 internal</h4>
+        <h4 class="directchild">Hey this is h4 internal</h4>
+        <h4 class="directchild">Hey this is h4 internal</h4>        
+    </div>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+    <h1>box model</h1>
+    <p class="boxmodel">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, sit?</p>
+    <h1>Pseudo Classes</h1>
+    <!--
+    <h2>CSS Pseudo Classes(:)</h2>
+    Defn:These are mainly used tp style our tags on a particular state of an elem
+    -->
+    <!--
+    Button States:
+    >> Hover State (Universal State)
+    >> Active State
+    >> Focus State
+    -->
+    <button class="hover" type="click me">Click Me</button>
+    <br>
+    <br>
+    <!----  Active State (Left Key): Holding left key/btn of the mouse -->
+    <button class="active" type="click me">Submit</button>
+    <br>
+    <br>
+    <!---focus State: When we click/visit that btn -->
+    <button class="focus" type="click me">Click on Me</button>
+    <div class="parent class">
+        <div class="childclass">child 1</div>
+        <div class="childclass">child 2</div>
+        <div class="childclass">child 3</div>
+        <div class="childclass">child 5</div>
+        <div class="childclass">child 6</div>
+        <div class="childclass">child 7</div>        
+        <div class="childclass">child 8</div>    
+        <div class="childclass">child 9</div>     
+        <div class="childclass">child 10</div>
+    </div>
+    <br>
+    <br>
+    <!--Pseudo Elements ::-->
+    <p class="pseudoelement">Hii</p>
+</body>
+</html>
