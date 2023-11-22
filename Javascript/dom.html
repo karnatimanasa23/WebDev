@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DOM Manipulation</title>
+        <style>
+            .container {
+                border:2px solid black;
+                padding:20px;
+                margin-bottom: 20px;
+            }
+            #showHideButton{
+                padding:5px;
+                background-color: crimson;
+                border:2px solid black;
+                border-radius: 5px;
+                color:white;
+                font-family:Arial, Helvetica, sans-serif;
+                font-size:20px;
+            }
+            span{
+                font-size:64px;
+            }
+            .counter{
+                border:1px solid black;
+                display:flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="heading1">Heading</h1>
+            <p id="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque, iure?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla sed dolore recusandae?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, est.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <button id="showHideButton">Hide card</button>
+         <!---- <div class="card">
+            <h1 class="heading1">heading card</h1>
+        </div>
+        <div class="card">
+            <h1 class="heading1">heading card</h1>
+        </div>
+        <div class="card">
+            <h1 class="heading1">heading card</h1>
+        </div>
+        <div class="card">
+            <h1 class="heading1">heading card</h1>
+        </div> */ -->
+       <div class="counter">
+        <span>0</span>
+        <div class="button-groups">
+        <button id="increament">Increament</button>
+        <button id="setZero">zero</button>
+        <button id="decreament">decreament</button>
+        </div>
+       </div>
+       
+
+        <script src="dom.js"></script>
+    </body>
+</html>
