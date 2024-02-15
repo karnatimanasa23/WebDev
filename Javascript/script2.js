@@ -130,6 +130,95 @@ async and await
 try nd catch
 diff methods in javascript */
 /* Array Methodologies */
+ /* 1.Map */
+ var ourArray = [1,2,5,8,15];
+ var newArray = ourArray.map((data) => data*5 )
+ console.log(newArray); // output : 5,10,25,40,75
+/* 2.Filter Method  */
+var ourArray1 = [1,26,5,12,8,15,18,20];
+ var newArray1 = ourArray1.filter((data) => {
+    return data<15;
+ })
+ console.log(newArray1); // Output:1,5,12,8
+ /* Find method : can find instance or single item  */
+ var newArray2 = ourArray1.find((data) => data ==15)
+ console.log(newArray2); //output : 15
+ /* reduce method */
+ var prices = [100,230,450,600];
+ var newArray3 = prices.reduce((accumulator,currentvalue) =>{
+    return accumulator+currentvalue;
+ },0) //accumulator :initially might it has some garbage value to get clear value need to assign zero first
+ console.log(newArray3);// output :0+100=100,100+230=330,330+450=780,780+600=1380
+ var newArray2 = ourArray1.find((data) => data ==15)
+ console.log(newArray2); //output : 15
+ /* reduce method */
+ var flipkartCart = [
+   { 
+    price :1000,
+    quantity:2
+ },
+ {
+    price:2000,
+    quantity:1
+ },
+  {
+    price:5000,
+ quantity:3
+  }
+   ]
+ var flipkartValue = flipkartCart.reduce((accumulator,currentvalue) =>{
+    return accumulator+currentvalue.price*currentvalue.quantity; //it has 2 values price and quantity
+ },0) //accumulator :initially might it has some garbage value to get clear value need to assign zero first
+ console.log(flipkartValue);//ouput:19000
+ /* Promises 
+ Promises is an object that returns a value that we can hope to receive in the future but not immediately
+ Pending stage ,fulfill stage,reject stage 
+ var myPromise = new Promise (() => {}) or
+var myPromise = new Promise ( function(){})*/
+/* creating instance promise with new keyword and class is Promise having call back function(ananymous function) having stages */
+var promise = new Promise ( function(resolve ,reject) {
+    //creating promise
+ resolve("success")
+ reject("error occured");
+})
+// creating two methods then:handles success message and catch:handles the error message
+ promise.then((data) => {
+    console.log(data)
+}).catch((error) => {
+    console.log(err)
+})//output :success(takes first value by default : resolve)
+// setTimeout function with millisecond 
+setTimeout(function() {
+    console.log("hello all")
+},7000) //output:hello all (it will wait for 7 sec to print the value)
+//Alternate way of using then and catch is...async and await
+// Async:functions execute asynchronously and Await:it will take some time to fetch details
+var myProm = new Promise (function(resolve,reject){
+    setTimeout(function() {
+        resolve("this was successfully executed");
+    },3000)
+});
+var getMyPromise = async () => {
+    var getResult = await myProm;
+    console.log(getResult);
+}
+getMyPromise(); //WILL EXECUTE AFTER 3 SEC :this was successfully executed
+//try and catch blocks
+var myProm1 = new Promise (function(res,rej){
+    setTimeout(function() {
+        res("plz execute the solution successfully");
+    },3000);
+    rej("err");
+});
+var getMyPromise1 = async () => {
+    try{
+    var getResult1 = await myProm1;
+    console.log("success :",getResult1);
+    }catch(err) {
+        console.log("error:",err);
+    }
+}
+getMyPromise1(); //output : "err"
 
 
 
